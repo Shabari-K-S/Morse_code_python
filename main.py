@@ -32,7 +32,6 @@ def decode_morse(message):
     decoded_message = ""
     message = message.replace('   '," _ ")
     morse_code_list = message.split(' ')
-    print(morse_code_list)
     for code in morse_code_list:
         for letter, morse_code in MORSE_CODE.items():
             if code == morse_code:
